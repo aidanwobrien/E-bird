@@ -2,10 +2,9 @@ from ebird.api import get_observations
 import pandas as pd
 from datetime import datetime
 
-
 today = datetime.today().strftime('%Y-%m-%d')
 
-api_key = 'uh892sarp2s8'
+api_key = 'your-api-key-here'
 
 def job():
     records = get_observations(api_key, 'CA-ON', back = 30)
